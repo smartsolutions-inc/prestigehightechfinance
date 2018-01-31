@@ -1,0 +1,33 @@
+{
+  "name": "prestige",
+  "version": "1.0.0",
+  "description": "Full project for the Build a Website with Node course.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Fabian/Jerson/Rafael",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.1",
+    "express": "^4.16.2",
+    "express-ejs-layouts": "^2.2.0",
+    "knex": "^0.14.2",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.10.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartsolutions-inc/prestigehightechfinance.git"
+  },
+  "keywords": [
+    "prestige"
+  ],
+  "bugs": {
+    "url": "https://github.com/smartsolutions-inc/prestigehightechfinance/issues"
+  },
+  "homepage": "https://github.com/smartsolutions-inc/prestigehightechfinance#readme"
+}
