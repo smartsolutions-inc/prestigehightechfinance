@@ -10,13 +10,18 @@
   "author": "Fabian/Jerson/Rafael",
   "license": "ISC",
   "dependencies": {
+    "auth0-js": "^9.2.0",
     "body-parser": "^1.18.2",
     "ejs": "^2.5.1",
     "express": "^4.16.2",
     "express-ejs-layouts": "^2.2.0",
     "knex": "^0.14.2",
+    "memcached": "^2.2.2",
+    "morgan": "^1.9.0",
     "mysql": "^2.15.0",
-    "nodemon": "^1.10.2"
+    "node-session": "^1.2.1",
+    "nodemon": "^1.10.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "repository": {

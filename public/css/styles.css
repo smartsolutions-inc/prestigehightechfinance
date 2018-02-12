@@ -1,55 +1,374 @@
-body {
-  font-size: 16px;
-  line-height: 1.5;
-}
+.clearfix {
+  overflow: auto; }
 
-header .navbar {
-  border-radius: 0;
-  margin: 0;
-}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
 
-.hero {
-  background-image: url(../img/planet.jpg);
-  background-repeat: no-repeat;;
-  background-size: cover;
-  background-position: center center;
-  padding: 50px 0;
-  min-height: 650px;
+.dsp-flx {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; }
+
+.attached-center {
+  width: 1166px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+:root {
+  --bg-color: #f0f0f0;
+  --bg-base-color: #222E3E; }
+
+#prestige--app, body, html {
+  width: 100%;
+  height: 100%;
   position: relative;
-}
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font: 500 14px/150% 'Open Sans',sans-serif; }
 
-.hero-content {
+#app__header {
+  width: 100%;
+  height: 92px;
+  background-color: var(--bg-base-color); }
+
+.sldr-container--app {
+  width: 100%;
+  height: calc(100vh - 248px);
+  background-color: var(--bg-base-color);
+  background-image: url(/static/blockchain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+.table-ribbon-inf {
+  width: 100%;
+  height: 92px;
+  background-color: #09f; }
+
+.market-tv-streaming {
+  width: 100%;
+  height: 64px;
+  background-color: green; }
+
+.about, .our-team, .whoami {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  position: relative; }
+
+.whoami {
+  background-color: transparent; }
+
+.about {
+  background-color: transparent;
+  border-top: 15px solid #ebcb6a;
+  border-bottom: 15px solid #ebcb6a; }
+
+.oldman, .structure {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.oldman {
+  background-image: url(/static/man.jpg); }
+
+.structure {
+  background-image: url(/static/struc.jpg); }
+
+.our-team {
+  background-color: transparent; }
+
+ul.team-card-board {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+li.member-card {
+  width: 275.5px;
+  height: 400px;
+  background-color: #fff;
+  float: left;
+  margin-right: calc(16px + 5.33px); }
+
+li.member-card:last-of-type {
+  margin: 0; }
+
+.headegger {
+  width: 100%;
+  height: auto; }
+
+.headegger .big-head {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  padding: 64px 0;
+  font-size: 2.8rem;
+  text-align: center;
+  box-sizing: border-box; }
+
+.headegger .small-txt {
+  width: 590px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  font-size: 1.8rem; }
+
+.shaded-window {
+  width: 100%;
+  height: calc(100% - 300px);
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.desc-footer-card {
+  width: 100%;
+  min-height: 300px;
+  background-color: #161823;
+  display: flex; }
+
+.desc-footer-card .box-percent {
+  width: 300px;
+  min-height: 300px;
+  line-height: 300px;
+  text-align: center;
+  color: #ebcb6a;
+  position: relative;
+  font-size: 5.2rem; }
+
+.desc-footer-card .box-percent::after {
+  content: '';
+  display: inline-block;
+  width: .5px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 75px);
+  height: 150px;
+  background-color: #ebcb6a; }
+
+.desc-footer-card .description {
+  width: calc(100% - 300px);
+  min-height: 300px;
+  padding: 32px 128px;
+  box-sizing: border-box; }
+
+.desc-footer-card .description .desc-title {
+  color: #e1efe6;
+  font-size: 2.3rem; }
+
+.dg {
+  background-color: #1c232b; }
+
+.whoami {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121; }
+
+.portrait {
+  width: 1160px;
+  margin: 0 auto;
+  height: 55%;
+  position: relative;
+  background-image: url(/static/billions.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+#__footer--app {
+  width: 100%;
+  height: 400px;
+  background-color: #888; }
+
+#app--startup__ {
+  width: 100%;
+  height: auto;
+  position: relative; }
+
+.__cluster {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-start; }
+
+.__form--fields-env {
+  width: 60vw;
+  height: 100vh;
+  position: relative; }
+
+.__form--fields {
+  max-width: 450px;
+  min-width: 360px;
+  height: auto;
+  max-height: 90vh;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.17);
+  padding: 16px;
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
-  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.__form--fields .__read-first {
   width: 100%;
-}
+  height: auto;
+  padding: 16px 0;
+  box-sizing: border-box; }
 
-.hero-content h2 {
-  color: #FFF;
-  font-size: 80px;
-}
+.__form--fields .__read-first a {
+  color: #09f; }
 
-.hero-content p {
-  color: #FFF;
-  font-size: 40px;
-  margin-bottom: 30px;
-}
+.__form--fields .__input--group {
+  width: 100%;
+  height: auto;
+  padding: 16px 0;
+  box-sizing: border-box; }
 
-.hero-content .btn {
-  border-radius: 2px;
-  padding: 20px 30px;
-}  
+.__form--fields .__input--group input {
+  width: 100%;
+  border: 1px solid #ddd;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 5px;
+  box-sizing: border-box; }
 
-main {
-  min-height: 500px;
-  padding: 50px 0;
-}
+.__form--fields .__action {
+  width: 100%;
+  height: auto;
+  padding: 16px 0;
+  box-sizing: border-box;
+  text-align: right;
+  vertical-align: right; }
 
-footer {
-  padding: 30px 0;
-  font-size: 14px;
-  color: #BBB;
-  background: #222;
-  text-align: center;
-}
+.__form--fields .__action button {
+  height: 36px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-weight: 600;
+  background-color: #09f;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase; }
+
+.__form--btn {
+  height: 36px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  font-weight: 600;
+  background-color: #09f;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.stage_2, .stage_3, .stage_4 {
+  display: none; }
+
+.__road--env {
+  width: 40vw;
+  height: 100vh;
+  background-color: #212121;
+  position: relative; }
+
+.__road--env .__box-road-inf {
+  max-width: 450px;
+  min-width: 360px;
+  height: auto;
+  max-height: 90vh;
+  padding: 16px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto; }
+
+.__road--env .__box-road-inf .h-isotype {
+  width: 100%;
+  height: auto;
+  padding: 16px 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600; }
+
+.__road--env .__box-road-inf p.route {
+  position: relative;
+  padding-left: 31px; }
+
+.__road--env .__box-road-inf p.route::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  line-height: 1.5;
+  top: 2px;
+  left: 0; }
+
+.__road--env .__box-road-inf p.route::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 18px;
+  background-color: #fff;
+  position: absolute;
+  top: 18.5px;
+  left: 7.5px; }
+
+.__road--env .__box-road-inf p.route:first-of-type::before {
+  background-color: #09f;
+  border: 1px solid #09f; }
+
+.__road--env .__box-road-inf p.route:last-of-type::after {
+  content: none;
+  display: none; }
+
+.__road--env .__box-road-inf .inf, .__road--env .__box-road-inf p {
+  color: #fff;
+  letter-spacing: 1px; }
+
+label {
+  padding: 8px 0; }
+
+@media screen and (max-width: 960px) {
+  .__form--fields-env {
+    width: 100%; }
+  .__road--env {
+    display: none; } }
+
+@media screen and (max-width: 720px) {
+  .__cluster {
+    display: block; }
+  .__form--fields-env {
+    width: 100%; }
+  .__form--fields {
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none; } }
+
+/*# sourceMappingURL=styles.css.map */

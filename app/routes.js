@@ -1,34 +1,46 @@
-// require express
+// require xpress and paht file folder
 var express = require('express');
 var path    = require('path');
 
-// create our router object
+// create touter object
 var router = express.Router();
+// export router object
+module.exports =router;
 
-// export our router
-module.exports = router;
-
-// route for our homepage
+// home route sig in for the moment
 router.get('/', function(req, res) {
-  res.render('pages/home');
+  res.render('pages/login',{
+    title: 'Login'
+  });
 });
 
-// route for our about page
-router.get('/about', function(req, res) {
-  var users = [
-    { name: 'Holly', email: 'holly@scotch.io', avatar: 'http://placekitten.com/300/300'},
-    { name: 'Chris', email: 'chris@scotch.io', avatar: 'http://placekitten.com/400/400'},
-    { name: 'Ado', email: 'Ado@scotch.io', avatar: 'http://placekitten.com/500/500'},
-    { name: 'Samantha', email: 'Samantha@scotch.io', avatar: 'http://placekitten.com/700/700'}
-  ];
-
-  res.render('pages/about', { users: users });
+router.get('/signup', function(req, res){
+  res.render('pages/signup');
 });
 
-router.get('/contact', function(req, res) {
-  res.render('pages/contact');
+router.get('/home', function(req, res){
+  res.render('pages/index');
 });
 
-router.post('/contact', function(req, res) {
-  res.send('Thanks for contacting us, ' + req.body.name + '! We will respond shortly!');
-});
+router.post('/login', function(req, res){
+  console.log("hello i enter log in");
+  let body = req.body.__emial;
+  let noma = req.body.__password;
+  console.log(body,noma);
+  res.send('hello this is the router of login')
+})
+
+router.get('/tes', function(req, res){
+  res.render('pages/test',{
+    title:'teting the post'
+  });
+})
+
+router.post('/tes', function(req, res){
+  // let  body= req.body;
+  // var  bodys = req.body;
+  // if (body.empty()){
+  //   console.log(bodys);}
+  // console.log(body);
+  res.send('testing'+req.body.name+req.body.email+req.body.message);
+})
